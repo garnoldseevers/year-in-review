@@ -1,0 +1,954 @@
+<!-- The start section will be dropped as this is modular content designed for multiple platforms, another consideration resulting from this is the need to emply a fluid variable-width approach -->
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+	Year In Review
+</title>
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Oswald" rel="stylesheet">
+</head>
+<body>
+<!-- 
+
+End of start section 
+
+-->
+<style scoped type="text/css">	
+/* Rest CSS */
+html, body,{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+#year-in-review html, 
+#year-in-review body,
+#year-in-review div, 
+#year-in-review span, 
+#year-in-review applet, 
+#year-in-review object, 
+#year-in-review iframe, 
+#year-in-review h1, 
+#year-in-review h2, 
+#year-in-review h3, 
+#year-in-review h4, 
+#year-in-review h5, 
+#year-in-review h6, 
+#year-in-review p, 
+#year-in-review blockquote, 
+#year-in-review pre, 
+#year-in-review a, 
+#year-in-review abbr, 
+#year-in-review acronym, 
+#year-in-review address, 
+#year-in-review big, 
+#year-in-review cite, 
+#year-in-review code, 
+#year-in-review del, 
+#year-in-review dfn, 
+#year-in-review em, 
+#year-in-review img, 
+#year-in-review ins, 
+#year-in-review kbd, 
+#year-in-review q, 
+#year-in-review s, 
+#year-in-review samp, 
+#year-in-review small, 
+#year-in-review strike, 
+#year-in-review strong, 
+#year-in-review sub, 
+#year-in-review sup, 
+#year-in-review tt, 
+#year-in-review var, 
+#year-in-review b, 
+#year-in-review u, 
+#year-in-review i, 
+#year-in-review center, 
+#year-in-review dl, 
+#year-in-review dt, 
+#year-in-review dd, 
+#year-in-review ol, 
+#year-in-review ul, 
+#year-in-review li, 
+#year-in-review fieldset, 
+#year-in-review form, 
+#year-in-review label, 
+#year-in-review legend, 
+#year-in-review table, 
+#year-in-review caption, 
+#year-in-review tbody, 
+#year-in-review tfoot, 
+#year-in-review thead, 
+#year-in-review tr, 
+#year-in-review th, 
+#year-in-review td, 
+#year-in-review article, 
+#year-in-review aside, 
+#year-in-review canvas, 
+#year-in-review details, 
+#year-in-review embed, 
+#year-in-review figure, 
+#year-in-review figcaption, 
+#year-in-review footer, 
+#year-in-review header, 
+#year-in-review hgroup, 
+#year-in-review menu, 
+#year-in-review nav, 
+#year-in-review output, 
+#year-in-review ruby, 
+#year-in-review section, 
+#year-in-review summary, 
+#year-in-review time, 
+#year-in-review mark, 
+#year-in-review audio, 
+#year-in-review video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* General */
+body{
+	line-height: 150%;
+	font-size: 16px;
+	margin: 0px;
+	font-family: "Open Sans", Arial, sans-serif;
+	color: #818181;
+}
+/* Reusable */
+#year-in-review .clearfix::after{
+	content: "";
+	clear: both;
+	display: table;
+}
+/* Content Toggle */
+.content-toggle{
+	display: none;
+}
+.content-toggle-button{
+	cursor: pointer;
+}
+.collapsible-content{
+	display: none;
+}
+#toggle-one:checked ~ #content-one{
+	display: block;
+}
+#toggle-one:checked ~ #toggle-one-button #read-less-one{
+	display: block;
+}
+#toggle-one:checked ~ #toggle-one-button #read-more-one{
+	display: none;
+}
+#toggle-two:checked ~ #content-two{
+	display: block;
+}
+#toggle-two:checked ~ #toggle-two-button #read-less-two{
+	display: block;
+}
+#toggle-two:checked ~ #toggle-two-button #read-more-two{
+	display: none;
+}
+#toggle-three:checked ~ #content-three{
+	display: block;
+}
+#toggle-three:checked ~ #toggle-three-button #read-less-three{
+	display: block;
+}
+#toggle-three:checked ~ #toggle-three-button #read-more-three{
+	display: none;
+}
+#toggle-four:checked ~ #content-four{
+	display: block;
+}
+#toggle-four:checked ~ #toggle-four-button #read-less-four{
+	display: block;
+}
+#toggle-four:checked ~ #toggle-four-button #read-more-four{
+	display: none;
+}
+#year-in-review #dinosaurs-backdrop{
+	background-image: url("dinosaurs.jpg");
+}
+#year-in-review #brexit-backdrop{
+	background-image: url("brexit.jpg");
+}
+#year-in-review #election-backdrop{
+	background-image: url("election.jpg");
+}
+#year-in-review #white-house-backdrop{
+	background-image: url("white-house.jpg");
+}
+/* Typography */
+#year-in-review h1{
+	color: #303030;
+	font-family: Oswald, Arial, sans-serif;
+	text-transform: uppercase;
+}
+#year-in-review p{
+	line-height: 150%;
+	font-size: 16px;
+	font-family: "Open Sans", Arial, sans-serif;
+	color: #818181;
+}
+#year-in-review .fine-print p{
+	font-size: 10px;
+	color: #b3b3b3;
+}
+/* Intro */
+#year-in-review .article{
+	padding: 25px;
+}
+#year-in-review .article h1{
+	font-size: 36px;
+	line-height: 48px;
+	margin-bottom: 25px;
+}
+#year-in-review .article p{
+	margin-bottom: 25px;
+}
+/* Timeline */
+#year-in-review .timeline-title{
+	display: block;
+	margin: 0 auto;
+	padding: 25px 25px;
+	text-align: center;
+	font-size: 36px;
+	line-height: 48px;
+	font-family: "Oswald","Open Sans", Arial, sans-serif;
+	color: #303030;
+	background-color: #ffffff;
+}
+#year-in-review #timeline{
+	max-width: 900px;
+	margin: 0 auto;
+	pading: 0px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-width: 1px;
+	border-color: #b3b3b3;
+	background-image: url("timeline-line.png");
+	background-repeat: repeat-y;
+	background-position: center;
+}
+/* Event */
+#year-in-review .timeline-event{
+	position: relative;
+	padding: 0px 25px;
+	padding-bottom: 0px;
+}
+#year-in-review .timeline-event:first-child{
+	padding-top: 25px;
+}
+#year-in-review .bullet{
+	display: block;
+	width: 20px;
+	height: 20px;
+	margin: 0px auto;
+	border-radius: 99px;
+	background-color: #b3b3b3;
+	background-color: #818181;
+}
+#year-in-review .date-box{
+	display: block;
+	margin-bottom: 25px;
+	padding: 25px;
+	background-color: #ff9600;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+#year-in-review .read-more,
+#year-in-review .read-less{
+	max-width: 300px;
+	margin: 0px auto;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #ffffff;
+	border-radius: 99px;
+	padding: 10px 25px;
+	text-align: center;
+	color: #ffffff;
+}
+#year-in-review .read-more{
+	display: block;
+}
+#year-in-review .read-less{
+	display: none;
+}
+#year-in-review .date-box .downward-arrow,
+#year-in-review .date-box .upward-arrow{
+	width: 20px;
+	margin-left: 5px;
+}
+#year-in-review .timeline-date{
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 24px;
+	line-height: 30px;
+	font-family: "Oswald", "Open Sans", Arial, sans-serif;
+	color: #ffffff;
+	text-transform: uppercase;
+}
+#year-in-review .timeline-headline{
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 25px;
+	padding: 0px;
+	padding-top: 0px;
+	text-align: center;
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: 300;
+	font-family: "Open Sans", Arial, sans-serif;
+	color: #ffffff;
+}
+/* Content */
+#year-in-review .collapsible-content .timeline-headline{
+	margin-top: 50px;
+	max-width: 500px;
+	margin-bottom: 50px;
+	background-color: #ffffff;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #b3b3b3;
+	padding: 25px 25px;
+	color: #303030;
+	background-color: #ffffff;
+}
+#year-in-review .content-section{
+	position: relative;
+	margin-bottom: 25px;
+}
+#year-in-review .collapsible-content p{
+	padding: 25px 10px;
+	margin: 0px;
+	text-align: justify;
+	background-color: #ffffff;
+}
+#year-in-review .collapsible-content p:first-letter{
+	font-size: 18px;
+}
+/* Quote */
+#year-in-review .visual-container{
+	padding: 0px 10px;
+}
+#year-in-review .visual-container img{
+	display: block;
+	max-width: 100%;
+	margin: 0 auto;
+	margin-bottom: 25px;
+	vertical-align: bottom;
+}
+#year-in-review .quote{
+	position: relative;
+	margin: 0 auto;
+	margin-bottom: 25px;
+	padding: 10px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #b3b3b3;
+	background-color: #ffffff;
+}
+#year-in-review .quote-site{
+	padding: 0px;
+	padding-top: 0px;
+	text-align: center;
+	display: block;
+	color: #303030;
+	font-family: Oswald, "Open Sans", Arial, sans-serif;
+	font-size: 24px;
+	line-height: 24px;
+	text-transform: capitalize;
+	vertical-align: top;
+}
+#year-in-review .quote-site img{
+	height: 30px;
+}
+#year-in-review .quote-content{
+	padding: 0px;
+	display: block;
+	padding-top: 10px;
+	color: #303030;
+	font-family: Oswald, "Open Sans", Arial, sans-serif;
+	font-size: 24px;
+	text-transform: capitalize;
+}
+#year-in-review .quote-headline{
+	display: block;
+	padding: 0px;
+	color: #303030;
+	font-family: "Open Sans", Arial, sans-serif;
+	font-size: 18px;
+	text-transform: capitalize;
+	text-align: center;
+}
+#year-in-review .quote-author{
+	display: none;
+	padding: 0px;
+	color: #818181;
+	font-family: "Open Sans", Arial, sans-serif;
+	font-size: 12px;
+	text-transform: capitalize;
+	text-align: center;
+}
+#year-in-review .figure{
+	display: block;
+	margin: 0 auto;
+	padding: 25px;
+	font-family: Oswald, "Open Sans", Arial, sans-serif;
+	font-size: 60px;
+	text-align: center;
+}
+#year-in-review .green{
+	color: #80b729;
+}
+#year-in-review .orange{
+	color: #ffa011;
+}
+#year-in-review .blue{
+	color: #47c9c9;
+}
+#year-in-review .quote-date{
+	padding: 0px;
+	display: block;
+	color: #818181;
+	font-family: "Open Sans", Arial, sans-serif;
+	font-size: 10px;
+	text-transform: capitalize;
+	text-align: center;
+}
+/* Desktop */
+@media only screen and (min-width: 768px){
+	#year-in-review #timeline{
+	}
+	#year-in-review .timeline-event{
+		padding: 0px 25px;
+	}
+	#year-in-review .bullet{
+		display: none;
+	}
+	#year-in-review .date-box{
+		margin: 0 25px;
+		margin-bottom: 25px;
+	}
+	#year-in-review .date-box:hover{
+		padding: 30px 0px;
+		margin: 0 20px;
+		margin-top: -5px;
+		margin-bottom: 20px;
+	}
+	#year-in-review .date-box:hover .read-more,
+	#year-in-review .date-box:hover .read-less{
+		background-color: #80b729;
+	}
+	#year-in-review .content-section .bullet{
+		display: block;
+		position: absolute;
+		top: 25px;
+		left: 50%;
+		margin-left: -10px;
+		margin-top: -10px;
+	}
+	#year-in-review .timeline-date{
+		font-size: 36px;
+		margin-bottom: 10px;
+		padding: 0px;
+	}
+	#year-in-review .timeline-headline{
+		font-size: 18px;
+		font-weight: 400;
+	}
+	#year-in-review .visual-container{
+		width: 40%;
+		padding: 0px;
+		padding-right: 25px;
+		margin: 0px;
+		float: right;
+		background-color: #ffffff;
+		background-image: url("timeline-line.png");
+		background-repeat: repeat-y;
+		background-position: center;
+	}
+	#year-in-review .flip .visual-container{
+		width: 40%;
+		padding: 0px;
+		padding-right: 0px;
+		padding-left: 25px;
+		margin: 0px;
+		float: left;
+	}
+	#year-in-review .quote:last-child{
+		margin-bottom: 0px;
+	}
+	#year-in-review .content-section{	
+		background-image: url("timeline-line-horizotal.png");
+		background-repeat: repeat-x;
+		background-position: 0px 25px;
+	}
+	#year-in-review .content-section p{
+		width: 40%;
+		padding: 0px 5%;
+		margin-left: -1px;
+		margin-bottom: 25px;
+		float: left;
+		font-weight: 300;
+		text-align: justify;
+	}
+	#year-in-review .content-section.flip p{
+		width: 40%;
+		padding: 0px 5%;
+		margin-left: 0px;
+		margin-right: -1px;
+		float: right;
+	}
+	#year-in-review .visual-container img{
+		margin-bottom: 0px;
+	}
+	#year-in-review .quote{
+		position: relative;
+		margin: 0 auto;
+		margin-bottom: 25px;
+		display: table;
+		padding: 10px;
+		border-style: solid;
+		border-width: 1px;
+		border-color: #b3b3b3;
+		background-color: #ffffff;
+	}
+	#year-in-review .quote-site{
+		padding: 0px;
+		padding-top: 15px;
+		display: table-cell;
+		color: #303030;
+		font-family: Oswald, "Open Sans", Arial, sans-serif;
+		font-size: 24px;
+		line-height: 24px;
+		text-transform: capitalize;
+		vertical-align: top;
+	}
+	#year-in-review .quote-site img{
+		height: auto;
+		width: 50px;
+	}
+	#year-in-review .quote-content{
+		padding: 0px;
+		display: table-cell;
+		padding-left: 10px;
+		margin-left: 10px;
+		border-top-style: none;
+		border-left-style: solid;
+		border-width: 1px;
+		border-color: #b3b3b3;
+		display: inline-block;
+		color: #303030;
+		font-family: Oswald, "Open Sans", Arial, sans-serif;
+		font-size: 24px;
+		text-transform: capitalize;
+	}
+	#year-in-review .quote-headline{
+		display: block;
+		padding: 0px;
+		color: #303030;
+		font-family: "Open Sans", Arial, sans-serif;
+		font-size: 18px;
+		text-transform: capitalize;
+		text-align: left;
+	}
+	#year-in-review .quote-author{
+		display: block;
+		padding: 0px;
+		color: #818181;
+		font-family: "Open Sans", Arial, sans-serif;
+		font-size: 12px;
+		text-transform: capitalize;
+		text-align: left;
+	}
+	#year-in-review .blue{
+		color: #47c9c9;
+	}
+	#year-in-review .quote-date{
+		padding: 0px;
+		display: block;
+		color: #818181;
+		font-family: "Open Sans", Arial, sans-serif;
+		font-size: 10px;
+		text-transform: capitalize;
+		text-align: left;
+	}
+}
+</style>
+<!-- Consider this section for CMS population -->
+<div id="year-in-review">
+	<div class="article">
+		<h1>
+			End of Year Review
+		</h1>
+		<p>
+			A lot can happen in one year. 2016 was no exception. It may have felt like it had more downs than ups, but hey, you made it through. And if you can make it through 2016 then you can make it through any year. 
+		</p>
+		<p>
+			This year packed with election prognosticating, Britain Brexiting Europe, and dooms day predictions in China. It also had the potential to be a HORRIBLE year for the markets. Turns out it wasn't. Nonetheless, it would've been exhausting had you actually paid attention to the markets day-by-day. Instead, you hired blooom, freeing you to spend your time scaling trees to rescue kittens, performing random acts of kindness, and destroying (in a good way) the occasional air guitar solo. 
+		</p>
+		<p>
+			Still, we thought it'd be fun to do a quick once-over of this year's stressors you missed out on.
+		</p>
+	</div>
+	<h1 class="timeline-title">
+		So... what happened to stocks in 2016?
+	</h1>
+	<div id="timeline">
+		<div class="timeline-event">
+			<input type="checkbox" class="content-toggle" id="toggle-one"/>
+			<label for="toggle-one" class="content-toggle-button" id="toggle-one-button">
+				<span class="date-box" id="dinosaurs-backdrop">
+					<span class="timeline-date">
+						January
+					</span>
+					<span class="timeline-headline">
+						Worst January for the Dow since dinosaurs roamed the earth
+					</span>
+					<span class="read-more" id="read-more-one">
+						Read More <img src="downward-arrow.png" alt="read more" class="downward-arrow"/>
+					</span>
+					<span class="read-less" id="read-less-one">
+						Read Less <img src="upward-arrow.png" alt="read less" class="downward-arrow"/>
+					</span>
+				</span>
+			</label>
+			<div class="collapsible-content" id="content-one">
+				<div class="content-section clearfix">
+					<div class="visual-container">
+						<div class="quote">
+							<span class="quote-site">
+								<img src="cnbc-logo.png" alt="CNBC"/>
+							</span>
+							<span class="quote-content">
+								<span class="quote-headline">
+									Dow has worst four-day start to a year on record
+								</span>
+								<span class="quote-author">
+									<span class="blue">Matt Clinch</span>
+								</span>
+								<span class="quote-date">
+									Wednesday, 13 Jan 2016 | 9:40 AM
+								</span>
+							</span><!-- .quote-content -->
+						</div><!-- .quote -->
+					</div><!-- .visual-container -->
+					<span class="bullet"></span>
+					<p>
+						According to the financial media, the world almost ended in January of this year with major market indexes taking quite a hit. Jim Cramer was running around with what hair he has left lit on fire, screaming "apocalypse now!!
+					</p>
+					<span class="bullet"></span>
+				</div><!-- .content-section -->
+				<div class="content-section clearfix flip">
+					<div class="visual-container">
+						<div class="quote">
+							<span class="quote-site">
+								<img src="cnbc-logo.png" alt="CNBC"/>
+							</span>
+							<span class="quote-content">
+								<span class="quote-headline">
+									S&amp;P will plunge 75% on China deflation: SocGen bear
+								</span>
+								<span class="quote-author">
+									<span class="blue">Matt Clinch</span>
+								</span>
+								<span class="quote-date">
+									Wednesday, 13 Jan 2016 | 9:40 AM
+								</span>
+							</span><!-- .quote-content -->
+						</div><!-- .quote -->
+					</div><!-- .visual-container -->
+					<span class="bullet"></span>
+					<p>
+						A CNBC story quoted a French banker saying that the S&amp;P 500 index would drop 75% in 2016.
+					</p>
+					<span class="bullet"></span>
+				</div><!-- .content-section -->
+				<div class="content-section clearfix">
+					<div class="visual-container">
+						<div class="quote">
+							<span class="quote-site">
+								<img src="cnbc-logo.png" alt="CNBC"/>
+							</span>
+							<span class="quote-content">
+								<span class="quote-headline">
+									This Dow rally will end March 23: Analyst
+								</span>
+								<span class="quote-author">
+									<span class="blue">Kalyeena Makortoff</span>
+								</span>
+								<span class="quote-date">
+									Tuesday, 16 Feb 2016 | 4:05 AM
+								</span>
+							</span><!-- .quote-content -->
+						</div><!-- .quote -->
+					</div><!-- .visual-container -->
+					<span class="bullet"></span>
+					<p>
+						As the dip began to turn into a recovery by mid-February, another market "prophet" said it would hit it's high specifically on March 23rd right after lunch, and then shoot straight down. That's right, after lunch. Not before. Definitely not before! Wasn't it The Lehman Brothers who first said, "the market can't move until I finish my cobb salad"?  All this silliness goes to show that it must have been a stressful time for those investors going it alone.
+					</p>
+					<span class="bullet"></span>
+				</div><!-- .content-section -->
+				<h1 class="timeline-headline">
+					But... Should you have paid attention?
+				</h1>
+				<div class="content-section flip">
+					<div class="row clearfix">
+						<div class="visual-container">
+							<img src="stock-ticker.jpg" alt="stock ticker" />
+						</div><!-- .visual-container -->
+						<span class="bullet"></span>
+						<p>
+							The media loves harping on these "armageddon" scenarios... because, ya know, THIS TIME it really matters. Or does it? Fact of the matter is, this kind of thing is completely normal. On average, the market drops 5% or more three times per year and has a full 10% 'correction' (finance speak for market hype coming back down to earth) at least once per year. Sure, that's an average, but if you're investing for the long-term, it's all about averages over time. 
+						</p>
+						<span class="bullet"></span>
+					</div><!-- .row -->
+				</div><!-- .content-section -->
+				<div class="content-section clearfix">
+					<div class="row">
+						<div class="visual-container">
+							<div class="quote">
+								<span class="quote-site">
+									<img src="marketwatch-logo.jpg" alt="MarketWatch" />
+								</span>
+								<span class="quote-content">
+									<span class="quote-headline">
+										Understanding performance: The S&P 500 Index
+									</span>
+									<span class="quote-author">
+										<span class="blue">Paul A. Merriman</span>
+									</span>
+									<span class="quote-date">
+										Wednesday, 18 Feb 2015 | 8:26 AM
+									</span>
+								</span><!-- .quote-content -->
+							</div><!-- .quote -->
+						</div><!-- .visual-container -->
+						<span class="bullet"></span>
+						<p>
+							On the other hand, markets have gone up 10% on average over a longer period of time. We don't want to bore you with the idea of efficient markets and why it's harder than it sounds to 'beat the market,' but suffice it to say, the smart money is in it for the long-term and laughs in the face of the doomsaying financial media. 
+						</p>
+						<span class="bullet"></span>
+					</div><!-- .row -->
+				</div><!-- .content-section -->
+			</div><!-- .collapsible-content -->
+		</div><!-- .timeline-event -->
+		<div class="timeline-event">
+			<input type="checkbox" class="content-toggle" id="toggle-two"/>
+			<label for="toggle-two" class="content-toggle-button" id="toggle-two-button">
+				<span class="date-box" id="brexit-backdrop">
+					<span class="timeline-date">
+						June 23rd - Brexit
+					</span>
+					<span class="timeline-headline">
+						Financial stocks post worst day since 2011
+					</span>
+					<span class="read-more" id="read-more-two">
+						Read More <img src="downward-arrow.png" alt="read more" class="downward-arrow"/>
+					</span>
+					<span class="read-less" id="read-less-two">
+						Read Less <img src="upward-arrow.png" alt="read less" class="downward-arrow"/>
+					</span>
+				</span>
+			</label>
+			<div class="collapsible-content" id="content-two">
+				<div class="content-section flip clearfix">
+					<div class="visual-container">
+						<img src="search-bar.jpg" alt="search for 'what's the european union'" />
+					</div><!-- .visual-container -->
+					<span class="bullet"></span>
+					<p>
+						Speaking of financial front pages inspiring fear: Brexit. The media had a hay day. Guessing you remember this one, even if the Brits didn't quite know what was happening at the time. According to the Google, an alarming number of Brits spent June 24th asking the Google machine, "um, what's the European Union?"
+					</p>
+					<span class="bullet"></span>
+				</div><!-- .content-section -->
+				<div class="content-section clearfix">
+					<div class="visual-container">
+						<img src="clouds-headline.jpg" alt="Rolling Risk Clouds for stocks ahead" />
+					</div><!-- .visual-container -->
+					<span class="bullet"></span>
+					<p>
+						At the same time, CNBC had the following three stories above the fold on their homepage... It encapsulates the brexit confusion pretty well. The first headline shows the doomsday to come with rolling clouds of risk. Freaky, right? A little too reminiscent of Voldemort for our comfort... 
+					</p>
+					<span class="bullet"></span>
+				</div><!-- .content-section -->
+				<div class="content-section clearfix flip">
+					<div class="visual-container">
+						<div class="quote">
+							<span class="quote-site">
+								<img src="cnbc-logo.png" alt="CNBC"/>
+							</span>
+							<span class="quote-content">
+								<span class="quote-headline">
+									Why the UK's exit could take 10 years-and what you should do about it
+								</span>
+								<span class="quote-author">
+									<span class="blue">Jeff Cox</span>
+								</span>
+								<span class="quote-date">
+									Friday, 24 Jun 2016 | 12:32 PM
+								</span>
+							</span><!-- .quote-content -->
+						</div><!-- .quote -->
+					</div><!-- .visual-container -->
+					<span class="bullet"></span>
+					<p>
+						Let's move down to "Why the UK's exit could take 10 years-and what you should do about it." Wait. What? We were just freaking out. The world's going to end because of Brexit... but not for another ten years? You were just getting ready to go sell everything. Now you're not sure how to time it. 
+					</p>
+					<span class="bullet"></span>
+				</div><!-- .content-section -->
+				<div class="content-section clearfix">
+					<div class="row clearfix">
+						<div class="visual-container">
+							<div class="quote">
+								<span class="quote-site">
+									<img src="cnbc-logo.png" alt="CNBC"/>
+								</span>
+								<span class="quote-content">
+									<span class="quote-headline">
+										How to protect your 401(k) from the Brexit fallout
+									</span>
+									<span class="quote-author">
+										<span class="blue">Bryan Borykowski</span>
+									</span>
+									<span class="quote-date">
+										Saturday, 25 Jun 2016 | 5:20 AM
+									</span>
+								</span><!-- .quote-content -->
+							</div><!-- .quote -->
+						</div><!-- .visual-container -->
+						<span class="bullet"></span>
+						<p>
+							Ahh, luckily the next article in our trifecta will give you a step-by-step road map on how to avoid the fallout in your 401k. Thank goodness! Not so fast though. After telling you not to panic (actually good advice), the article goes on to recommend moving a portion of your 401k into gold. This gives us pause on many fronts. First, as far as ideas go, actively trading in your 401k account is up there with double-checking if gravity is working by jumping off a building. Second, most 401(k) plans don't even give investors access to gold. As the millennials would say, "smh!"
+						</p>
+					</div><!-- .row -->
+					<div class="row clearfix">
+						<p>
+							As if all this wasn't stressful enough, let's add-on one of the most contentious elections in our lifetime in the mix...
+						</p>
+						<span class="bullet"></span>
+					</div><!-- .row -->
+				</div><!-- .content-section -->
+			</div><!-- .collapsible-content -->
+		</div><!-- .timeline-event -->
+		<div class="timeline-event">
+			<input type="checkbox" class="content-toggle" id="toggle-three"/>
+			<label for="toggle-three" class="content-toggle-button" id="toggle-three-button">
+				<span class="date-box" id="election-backdrop">
+					<span class="timeline-date">
+						Election Indecision 2016 
+					</span>
+					<span class="timeline-headline">
+						Two months of high, lows, and over reaction.
+					</span>
+					<span class="read-more" id="read-more-three">
+						Read More <img src="downward-arrow.png" alt="read more" class="downward-arrow"/>
+					</span>
+					<span class="read-less" id="read-less-three">
+						Read Less <img src="upward-arrow.png" alt="read less" class="downward-arrow"/>
+					</span>
+				</span>
+			</label>
+			<div class="collapsible-content" id="content-three">
+				<div class="content-section clearfix flip">
+					<div class="visual-container">
+						<img src="debate.jpg" alt="presidential debate stage" />
+					</div><!-- .visual-container -->
+					<span class="bullet"></span>
+					<p>
+						The couple months leading up to the election were a bit bumpy. The general opinion of the market seemed to be that a Trump win would be bad for the market and a Hillary win would be good. Why? It actually has absolutely nothing to do with politics and everything to do with the markets disdain for uncertainty. Any potential for shake up results in large swings in either direction. Stocks sky rocketed after Hillary won the first debate and again after the video regarding The Donald's "locker room banter" convo with an Access Hollywood host. Then, when things turned bad for Hillary after catching another email case, the market went south along with her polling numbers. 
+					</p>
+					<span class="bullet"></span>
+				</div><!-- .content-section -->
+				<div class="content-section clearfix">
+					<div class="visual-container">
+						<img src="trump-clinton.jpg" alt="Donald Trump and Hillary Clinton"/>
+					</div><!-- .visual-container -->
+					<span class="bullet"></span>
+					<p>
+						Overall, if Trump was doing well, the market wasn't. If Hillary did well, the market prospered alongside her. This way of looking at the world was drilled into our heads. Everyone agreed when it came to the stock market: Hillary good. Trump bad. But then November happened...
+					</p>
+					<span class="bullet"></span>
+				</div><!-- .content-section -->
+			</div><!-- .collapsible-content -->
+		</div><!-- .timeline-event -->
+		<div class="timeline-event">
+			<input type="checkbox" class="content-toggle" id="toggle-four"/>
+			<label for="toggle-four" class="content-toggle-button" id="toggle-four-button">
+				<span class="date-box" id="white-house-backdrop">
+					<span class="timeline-date">
+						November
+					</span>
+					<span class="timeline-headline">
+						Election Day and since... the Trump Bump
+					</span>
+					<span class="read-more" id="read-more-four">
+						Read More <img src="downward-arrow.png" alt="read more" class="downward-arrow"/>
+					</span>
+					<span class="read-less" id="read-less-four">
+						Read Less <img src="upward-arrow.png" alt="read less" class="downward-arrow"/>
+					</span>
+				</span>
+			</label>
+			<div class="collapsible-content" id="content-four">
+				<div class="content-section clearfix flip">
+					<div class="visual-container">
+						<img src="trump-thank-you-tour.jpg" alt="Trump Thank You Tour" />
+					</div><!-- .visual-container -->
+					<span class="bullet"></span>
+					<p>
+						Whatever your opinion about the outcome, this was a surprising revelation.  The number of pundits surprised by Trump's win was only outstripped by the number of pundits surprised that the market actually reacted positively. The talking heads weren't the only ones looking around for an explanation. Many average Americans sold out of stocks because they were worried they'd lose money (remember: Hillary good, Trump bad).  Wrong. Unfortunately for those folks, they lost out on some serious upward movement. 
+					</p>
+					<span class="bullet"></span>
+				</div><!-- .content-section -->
+				<h1 class="timeline-headline">
+					*Average return of investor who sold during breakouts and bought back in when things calmed down: <span class="figure orange">- 9%</span>
+				</h1>
+				<h1 class="timeline-headline">
+					**Return of someone holding an S&P index for the whole year: <span class="figure green">+ 13%</span>
+				</h1>
+			</div><!-- .collapsible-content -->
+		</div><!-- .timeline-event -->
+	</div><!-- #timeline -->
+	<div class="article">
+		<h1 class="timeline-title">
+			So what should you do for 2017?
+		</h1>
+		<p>
+			Stick to the clich&eacute; of all clich&eacute;s... "keep calm and carry on."
+		</p>
+		<p>
+			As a blooom client, you now have our blessing to laugh in the face of media pundits and brother's-in-law convinced that they can actually predict the future. You know better. Be nice, though. Not a deep belly laugh... just a meager, half-hearted, "good joke" chuckle and then move on without getting sucked into their vortex of conjecture. 
+		</p>
+		<p>
+			After all the turmoil this year, the S&P is now up about 11% in 2016, sitting comfortably near an all-time high. And you would've likely missed all of it if you had paid too much attention and reacted to all the chaos by selling your stock holdings. This year was yet another great example of why it's important to tune out all the noise when it comes to your retirement account(s). We still don't know what the impact of the election will be long-term, but remember, no one else does either. At the end of the day, it's better to stick to your guns and avoid making decisions based on headlines and talking heads.  After all, if you don't sell you don't lose. Thanks 2016. Lesson learned.
+		</p>
+		<p>
+			On behalf of all of us here at blooom, you can now get back to living your life and missing out on all the stress that is the stock market. Here's to the end of a great year and missing out on more stress next year. Happy Holidays and thanks for placing your trust in us by taking charge of your financial future! 
+		</p>
+		<div class="fine-print">
+			<p>
+				*Assumptions: A hypothetical lump-sum investment of $10,000 invested in the Vanguard 500 Index Fund (VFIAX) on the first trading day of 2016 (Jan. 4th). Following the initial lump sum investment on January 4th, the investor makes the decision to sell all shares and move to cash on February 11th, near the bottom of the early market correction. Investor then moves everything back to VFIAX on mid-day March 23rd, following the cited CNBC article predicting a market high at that exact moment. The investor then sells all shares of VFIAX again the day after the Brexit vote (June 24th), out of fear that the market would crash again. Invests back into VFIAX again one week later on June 30th after the Brexit dust had settled and the market had fully recovered from the associated drop. Investor then sells all of VFIAX again on November 4th, just prior to the US election, in order to avoid any potential fallout in the stock market from the results. The investor then never buys back into VFIAX for the remainder of 2016. Returns calculated based on the value of this hypothetical $10,000 investment on 12/19/2016.
+			</p>
+			<p>
+				**Assumptions: A hypothetical lump-sum investment of $10,000 invested in the Vanguard 500 Index Fund (VFIAX) on the first trading day of 2016 (Jan. 4th). No changes are made throughout the year. Returns are calculated based on the value of this hypothetical $10,000 investment on 12/19/2016. Value does not account for reinvested dividends throughout the year and is calculated based on the change in Net Asset Value of the fund alone. 
+			</p>
+		</div>
+	</div><!-- .article -->
+</div><!-- #year-in-review -->
+<!-- 
+
+The close tags will dropped as this is modular content designed for multiple platforms 
+
+-->
+</body>
+</html>
